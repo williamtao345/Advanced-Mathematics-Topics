@@ -2,7 +2,7 @@ package Utils;
 
 public class Algebra {
     public static void main(String[] args) {
-        System.out.println(gcd(12,16,22));
+        System.out.println(gcd(12, 16, 22));
     }
 
     public static boolean isPrime(int i) {
@@ -42,7 +42,21 @@ public class Algebra {
         return isInteger(Math.sqrt(x));
     }
 
+    public static boolean isSquare(long x) {
+        return isInteger(Math.sqrt(x));
+    }
+
+
     public static boolean isCube(int x) {
         return isInteger(Math.cbrt(x));
+    }
+
+    public static boolean isRectangular(long x) {
+        long a = (long) Math.sqrt(x);
+        return x == a * (a + 1);
+    }
+
+    public static long triangularNumber(long baseLength) {
+        return baseLength * (baseLength + 1) / 2;
     }
 }
