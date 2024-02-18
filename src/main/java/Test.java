@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import Utils.Algebra;
 
 public class Test {
@@ -32,4 +33,15 @@ public class Test {
             }
         }
     }*/
+=======
+public class Test {
+    public static void main(String[] args) {
+        int range = 100;
+
+        for (int i = 0; i < range; i++) {
+            int answer = i * i + 2 * i + 1;
+            System.out.printf("%d\t%d\n", i, answer % 3);
+        }
+    }
+>>>>>>> Stashed changes
 }
